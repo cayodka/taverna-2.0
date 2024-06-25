@@ -1,0 +1,32 @@
+body{
+    background-image: url(./view/tfFtH4HypBZ6L36ZfQAAAAAElFTkSuQmCC.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#letreiro{
+    background-image: url(./view/dark\ blood.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; 
+    height: 450px;
+    width: 490px;
+    margin-left: 90vh;
+    margin-top: -19vh;
+}
+
+#porta{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 14, 14, 0);  
+    border: none;
+    margin-top: 60vh;
+    margin-left: 45vh;
+    height: 210px;
+    width: 180px;
+    position: relative; 
+}
