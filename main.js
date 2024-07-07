@@ -1,20 +1,17 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    const som2 = new Audio('./sound/sound.mp3');
-
-        document.getElementById('body').addEventListener('mouseover', () => {
-            som2.play();
-            som1.onload = 'auto';
-    });
-});
-
-// função da porta
-
 const som1 = new Audio('./sound/door.mp3');
+const som2 = new Audio('./sound/sound.mp3');
 
+
+//      //      //      //Para carregar o som quando iniciar a pagina//     //      //      //
+document.addEventListener('DOMContentLoaded', () => {
+        som2.play();
+});
+//      //      //      //      //      //      //      //      //      //      //      //  
+
+
+//  //  //  //  //  //  //  // função da porta//    //      //      //      //      //      //
 document.getElementById('porta').addEventListener('click', () => {
     som1.play();
-    som1.preload = 'auto';
 });
 
 document.getElementById('porta').addEventListener('click', () => {
@@ -22,3 +19,4 @@ document.getElementById('porta').addEventListener('click', () => {
         window.location.href = './DentroTaberna/index.html';
     }, 2000);
 });
+//      //      //      //      //      //      //      //      //      //      //      //  
