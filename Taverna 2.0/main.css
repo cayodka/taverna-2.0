@@ -6,17 +6,6 @@ body{
 
 }
 
-#letreiro{
-    background-image: url(./view/dark\ blood.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute; 
-    height: 450px;
-    width: 490px;
-    margin-left: 90vh;
-    margin-top: -19vh;
-}
-
 #porta{
     
     display: flex;
