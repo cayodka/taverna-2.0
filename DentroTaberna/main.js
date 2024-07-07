@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const xp= new Audio('../sound/xp.mp3')
 
 
 
@@ -19,6 +20,7 @@ document.getElementById('armor').addEventListener('click', () => {
 let contador1 = 0;
 armor.addEventListener('click', () => {
     contador1++;
+    xp.play();
     
     if (contador1 === 1) {
         window.alert(`Você recebeu ${contador1} espada.`);
@@ -30,6 +32,7 @@ armor.addEventListener('click', () => {
 let contador2 = 0;
 potion.addEventListener('click', () => {
     contador2++;
+    xp.play();
     
     if (contador2 === 1) {
         window.alert(`Você recebeu ${contador2} poção.`);
@@ -39,12 +42,28 @@ potion.addEventListener('click', () => {
 });
 
 
-const som2 = new Audio('../sound/hello.mp3');
+const audio0 = new Audio('../sound/audio1.mp3');
+const audio1 = new Audio('../sound/sound2.mp3');
+const audio2 = new Audio('../sound/sound4.mp3');
 
 document.getElementById('bartender').addEventListener('click', () => {
-    som2.play();
-    som2.preload = 'auto';
+    audio0.play();
+    audio0.preload = 'auto';
 });
+let contadorbaternder = 0;
+
+bartender.addEventListener('click', () => {
+    contadorbaternder++;
+    if (contadorbaternder % 1 === 0) {
+        audio1.play();
+      } else if (contadorbaternder % 2 === 0) {
+        audio2.play();
+      } else if (contadorbaternder % 3 === 0) {
+        audio0.play();
+    }
+    });
+
+
 
 const som3 = new Audio('../sound/potion.mp3');
 
